@@ -13,7 +13,8 @@ import java.util.Iterator;
  */
 public class Pattern extends BaseObject {
     private BaseObject patternName = null;
-    private HashMap<Feature, BaseObject> features = new HashMap<Feature, BaseObject>();
+    private HashMap<Feature, BaseObject> features
+            = new HashMap<Feature, BaseObject>();
 
     public Pattern(BaseObject patternName) {
         this.patternName = patternName;
@@ -41,7 +42,8 @@ public class Pattern extends BaseObject {
             return false;
         if (this == o)
             return true;
-        else if (this.toString().compareTo(o.toString()) == 0 && this.features.equals(((Pattern)o).features))
+        else if (this.toString().compareTo(o.toString()) == 0 &&
+                 this.features.equals(((Pattern)o).features))
             return true;
         else
             return false;
