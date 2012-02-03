@@ -20,7 +20,7 @@
         <module name="IllegalImport"/>
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
-        <module name="LineLength"/>
+        <module name="LineLength" max="120"/>
         <module name="ModifierOrder"/>
         <module name="RedundantModifier"/>
         <module name="InterfaceIsType"/>
